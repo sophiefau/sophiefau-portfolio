@@ -1,1 +1,1 @@
-Please check my [portfolio :)](https://sophiefau.github.io/sophiefau-portfolio/)
+Here you can check my [portfolio](https://sophiefau.github.io/sophiefau-portfolio/)
