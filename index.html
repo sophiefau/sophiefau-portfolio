@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <title>Sophie Fauquembergue - Portfolio</title>
+  <link rel="shortcut icon" href="./img/favicon-32x32.png">
+</head>
+
+<body>
+  <header>
+    <nav class="main-navigation page-header_item brackets">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation"><a href="#projects" role="menuitem" class="underline">Projects</a></li>
+        <li role="presentation"><a href="#about" role="menuitem" class="underline">About</a></li>
+        <li role="presentation"> <a href="#contact" role="menuitem" class="underline">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div id="logo-name">
+      <p class="name">Sophie Fauquembergue</p>
+      <p class="role">Web designer&developer</p>
+    </div>
+
+    <section id="projects">
+      <h1>Projects</h1>
+      <div class="grid">
+        <div class="grid_item" onclick="openModal(0)">
+          <img src="img/pokedex.png" alt="image showing Pokédex project">
+        </div>
+        <div class="grid_item" onclick="openModal(1)">
+          <img src="img/catflix.png" alt="image showing CatFlix project">
+        </div>
+        <div class="grid_item" onclick="openModal(2)">
+          <img src="img/meet.png" alt="image showing Meet project">
+        </div>
+      </div>
+
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div class="div-h2"><h2 id="modal-title"></h2></div>
+          <div class="modal-links">
+            <div class="div-link-1"><a id="modal-link-1" class="button" target="_blank">Live app</a></div>
+            <div class="div-link-2"><a id="modal-link-2" class="button" target="_blank">Link to repository</a></div>
+          </div>
+          <p id="modal-text"></p>
+          <h3>Key Features</h3>
+          <ul id="modal-features"></ul>
+          <h3>Tech Specs</h3>
+          <ul id="modal-tech"></ul>
+          <div id="modal-images">
+            <img id="modal-img-1" class="modal-img" alt="Project image">
+            <img id="modal-img-2" class="modal-img" alt="Project image">
+          </div>
+          <div class="modal-navigation">
+            <p class="underline-inverse" onclick="previousProject()">Previous Project</p>
+            <p class="underline" onclick="nextProject()">Next Project</p>
+          </div>
+          <span id="modal-close-btn" class="close" onclick="closeModal()">&times;</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h1>About me</h1>
+      <div class="profile_portrait">
+        <img src="img/workingspaceretro_inverse.png" class="img_profile" alt="an image showing a workspace">
+        <img src="img/workingspaceretro.png" class="img_profile_hover" alt="an image showing a workspace">
+      </div>
+      <div class="profile_text">
+        <h4>Hello World!</h4>
+        <p> My name is Sophie.<br> I am a
+          future<span class="span-about">&lt;web&gt;</span>
+          developer.</p> <br>
+        <a href="https://github.com/sophiefau" target="_blank" class="button">Check out some code</a>
+        <div>
+          <a href="files/cv.pdf" class="button" download>Download my CV </a>
+        </div>
+      </div>
+
+    </section>
+    <section id="contact">
+      <h1>Contact</h1>
+      <div>
+        <p> Feel free to contact me! <br> at <a
+            href="mailto:sophiefauquembergue@gmail.com">sophiefauquembergue@gmail.com</a><br> or use the following form:
+        </p>
+      </div>
+
+      <form action="action_page.php" method="post" id="contact-form">
+        <label for="contact-email" class="standard-label">Leave your email: </label>
+        <br>
+        <input type="email" id="contact-email" required>
+        <br>
+        <label for="contact-message" class="standard-label">Write your message: </label>
+        <br>
+        <textarea required maxlength="240" id="contact-message"></textarea>
+        <br>
+        <input class="button" type="submit" value="Send message">
+      </form>
+
+
+    </section>
+
+
+  </main>
+  <footer>
+    <p>Find me on</p>
+    <div class="social-media">
+      <a href="https://github.com/sophiefau" target="_blank"><img src="img/github_icon.svg" alt="Github"></a>
+      <a href="https://linkedin.com" target="_blank"><img src="img/linkedin_icon.svg" alt="LinkedIn"></a>
+    </div>
+    <p>Copyright © 2024 Sophie Fauquembergue</p>
+    <a href="#" class="back-to-top" title="Back to top"> Back to top ↑</a>
+  </footer>
+  <script type="module" src="js/projectsData.js"></script>
+  <script type="module" src="js/script.js"></script>
+</body>
+
+</html>
