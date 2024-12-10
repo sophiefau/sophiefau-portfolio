@@ -11,4 +11,4 @@ This is my web portfolio where you can see my projects: [portfolio](https://soph
 
 ### Credits
 
-All projects are designed and developped by Sophie Fauquembergue: https://github.com/sophiefau
+All projects are designed and developped by Sophie Fauquembergue(https://github.com/sophiefau) during the Web Development course at CareerFoundry, 2024.
