@@ -1,4 +1,4 @@
-# Sophie Fauquembergue Portfolio
+# My Portfolio
 
 This is my web portfolio where you can see my projects: [portfolio](https://sophiefau.github.io/sophiefau-portfolio/)
 
