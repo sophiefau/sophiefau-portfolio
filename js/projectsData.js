@@ -18,7 +18,8 @@ export const projects = [
   {
     title: 'CatFlix',
     liveLink: 'https://catflixmovies.netlify.app/',
-    repoLink: 'https://github.com/sophiefau/CatFlix',
+    repoLink: 'https://github.com/sophiefau/CatFlix-client',
+    customLink: 'https://github.com/sophiefau/CatFlix',
     description: 'Welcome to CatFlix, the ultimate app showcasing a delightful collection of movies featuring our feline friends! Discover and list your favorite cat movies, and immerse yourself in a world of cuteness and adventure.',
     features: [
       'Retrieve a list of all movies',
