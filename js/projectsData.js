@@ -13,7 +13,7 @@ export const projects = [
       'Check the details for each Pokémon'
     ],
     tech: ['HTML', 'CSS', 'JavaScript', 'Fetch API', 'EsLint'],
-    images: ['img/pokedex_webview.png']
+    images: ['img/pokedex-full.png', 'img/pokedex-modal.png', 'img/pokedex_mobile.png']
   },
   {
     title: 'CatFlix',
@@ -44,7 +44,7 @@ export const projects = [
       'Krita → For creating the final logo and editing the images',
       'Swagger → For documenting the API'
     ],
-    images: ['img/screenshot_movies.png', 'img/screenshot_moviedetail.png']
+    images: ['img/catflix-full.png', 'img/catflix-movie-details.png', 'img/catflix_mobile1.png', 'img/catflix_mobile2.png']
   },
   {
     title: 'Meet!',
@@ -66,6 +66,51 @@ export const projects = [
       'Jest and Puppeteer → for testing and end-to-end coverage',
       'Recharts → for data visualization'
     ],
-    images: ['img/meetapp_full.png', 'img/meetapp_mobile.png']
+    images: ['img/meet_full.png', 'img/meet_mobile.png', 'img/meet_test.png', 'img/meet_test_coverage.png']
+  },
+  {
+    title: 'ChatMe',
+    repoLink: 'https://github.com/sophiefau/ChatMe',
+    description: 'ChatMe is a real-time mobile chat app built with React Native and can run on both iOS and Android devices. The app provides users with a chat interface and options to share images and their location.',
+    features: [
+      'Real-time messaging',
+      'Background customization', 
+      'Send a picture, from the galery or taken with the phone camera', 
+      'Location Sharing', 
+      'Offline access to cached messages'
+    ],
+    tech: [
+      'React Native → JavaScript framework',
+      'Expo → Development platform',
+      'Android Studio Emulator → Testing',
+      'GiftedChat → React Native chat library',
+      'Firebase → Database & file storage',
+      'AsyncStorage → Caching for offline mode',
+      'React Native Maps → Display shared location',
+      'ImagePicker → Upload and share images',
+    ],
+    images: ['img/chatme_mobile.png']
+  },
+  {
+    title: 'CatFlix Angular and workflow',
+    repoLink: 'https://github.com/sophiefau/CatFlix-angular',
+    description: 'Welcome to the Angular version of CatFlix Movie app, a responsive web application built using Angular. This app allows users to browse movies, register an account, log in, and manage their profile. This app was rebuild by taking into account and create user flows, user stories and organisational workflow? Using the story points system to better organise the workload',
+    features: [
+      'Real-time messaging',
+      'Background customization', 
+      'Send a picture, from the galery or taken with the phone camera', 
+      'Location Sharing', 
+      'Offline access to cached messages'
+    ],
+    tech: [
+      'Frontend Framework → Angular',
+      'UI Components: Angular Material',
+      'CSS Styling → SCSS',
+      'Backend API → Movie API',
+      'Deployment → GitHub Pages',
+      'Trello → Project management',
+      'Google Drawings → User flows'
+    ],
+    images: ['img/kaban.png', 'img/user_story.png', 'img/user_story2.png']
   }
 ];

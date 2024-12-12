@@ -1,6 +1,6 @@
 :root {
   --background: rgb(240, 240, 240);
-  --background-modal:rgb(249, 249, 249);
+  --background-modal:rgb(255, 255, 255);
   --text: #043438;
   --a: rgb(5, 103, 110);
   --a-visited: rgb(36, 105, 110);
@@ -353,7 +353,7 @@ h3 {
 .modal-img {
   width: 100%; 
   height: auto; 
-  border-radius: 4px;
+  border-radius: 22px;
   display: block;
   margin-top: 10px;
 }
