@@ -390,13 +390,13 @@ h3 {
 
 /* ABOUT */
 .profile_portrait {
+  width: 250px; 
+  height: 250px;
   margin-top: 20px;
   padding: 0 20px;
   float: left;
   margin-left: 30%;
   position: relative;
-  width: 250px; 
-  height: 250px;
 }
 
 .img_profile {
@@ -425,24 +425,6 @@ h3 {
 
 .profile_portrait:hover .img_profile_hover{
   opacity: 1;
-}
-
-.about-moreinfo{
-  clear: both;
-  position: relative;
-  width: 100%;
-}
-
-h4{
-  font-size: 17px;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 8px;
-  border: solid 1px var(--span-background);
-  width: 250px;
-  margin: auto;
-  margin-top: 20px;
-  color: var(--a-active);
 }
 
 .profile_text {
@@ -488,7 +470,80 @@ button:focus,
   opacity: 1;
 }
 
+.about-moreinfo{
+  clear: both;
+  margin: auto;
+  padding: 20px;
+}
 
+.about-text{
+  max-width: 590px;
+  margin: 30px auto;
+}
+
+.about-text p{
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+h4{
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  border: solid 1px var(--span-background);
+  width: 250px;
+  margin: auto;
+  margin-top: 50px;
+  color: var(--a-active);
+}
+
+/* Table */
+.table-container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-top: 1px solid var(--border);
+}
+
+th {
+  font-size: 17px;
+}
+
+.table-container td:first-child, .table-container th:first-child {
+  font-weight: bold; /* Make the text in the first column bold */
+  width: 55%; /* Make the first column much wider */
+}
+
+.table-container td, .table-container th {
+  width: 15%; /* Set equal width for the other columns */
+}
+
+tr:first-child th, tr:first-child td {
+  border-top: none;  /* Remove the top border from the first row */
+}
+
+td:last-child {
+  border-right: none;  /* Remove the right border from the last column */
+ }
+
+tr td:not(:last-child), tr th:not(:last-child) {
+  border-right: 1px solid var(--border);  /* Only add right borders inside the table */
+}
 
 /* CONTACT */
 .contact {
@@ -635,6 +690,12 @@ footer p{
   h1 {
     font-size: 22px;
   }
+
+  .table-container {
+    flex-direction: column;
+    width: 90%;
+  }
+  
 }
 
 /* @media (min-width: 1201px) {

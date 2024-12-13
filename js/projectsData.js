@@ -5,6 +5,7 @@ export const projects = [
     liveLink: 'https://sophiefau.github.io/pokedex/',
     repoLink: 'https://github.com/sophiefau/pokedex',
     description: 'This project is a simple web application displaying a list of Pokémon, fetched from the PokéAPI. Step into the enchanting world of Pokémon! Search and click on any Pokémon to uncover its unique details and abilities.',
+    details: 'The application is built using HTML, CSS, and JavaScript, and it loads data from an external API. It is fully responsive, prioritizing a seamless user experience.',
     features: [
       'Fetches a list of 300 Pokémon from the PokéAPI',
       'Displays a list of Pokémons with their image and type',
@@ -21,6 +22,7 @@ export const projects = [
     repoLink: 'https://github.com/sophiefau/CatFlix-client',
     customLink: 'https://github.com/sophiefau/CatFlix',
     description: 'Welcome to CatFlix, the ultimate app showcasing a delightful collection of movies featuring our feline friends! Discover and list your favorite cat movies, and immerse yourself in a world of cuteness and adventure.',
+    details: 'CatFlix application is a full-stack web project that lets users explore an extensive movie catalog. The backend API, built with Node.js, Express, and MongoDB, supports CRUD operations and includes user authentication and authorization. The frontend is developed with React and Redux. The project is hosted on Heroku (backend), MongoDB Atlas (database), and Netlify (frontend).',
     features: [
       'Retrieve a list of all movies',
       'Browse a list of movies featuring cats',
@@ -51,7 +53,8 @@ export const projects = [
     title: 'Meet!',
     liveLink: 'https://sophiefau.github.io/meet/',
     repoLink: 'https://github.com/sophiefau/meet',
-    description: 'Meet app allows users to see events in the city where there are. They can select the city and look for events. The app is a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events.',
+    description: 'Meet app lets users view events in their selected city, with options to search for specific events. It includes charts for data visualization and can be accessed offline to enhance user experience.',
+    details: 'Meet is a serverless, progressive web app (PWA) built with React and a test-driven development (TDD) approach. The application uses the Google Calendar API to fetch upcoming events. The app uses OAuth2 for authentication and AWS Lambda for serverless functions. It is cross-browser compatible, responsive, and meets PWA checklist standards with offline support and home screen installation.',
     features: [
       'Authenticate via Google',
       'Filter Events by City', 
@@ -72,7 +75,8 @@ export const projects = [
   {
     title: 'ChatMe',
     repoLink: 'https://github.com/sophiefau/ChatMe',
-    description: 'ChatMe is a real-time mobile chat app built with React Native and can run on both iOS and Android devices. The app provides users with a chat interface and options to share images and their location.',
+    description: 'ChatMe is a real-time mobile chat app running on both iOS and Android. It allows users to chat and share images and locations.',
+    details: 'Built with React Native, the app uses Expo for development and testing, and Google Firestore for seamless communication, supporting both online and offline modes. ',
     features: [
       'Real-time messaging',
       'Background customization', 
@@ -93,9 +97,10 @@ export const projects = [
     images: ['img/chatme_mobile.png']
   },
   {
-    title: 'CatFlix Angular and workflow',
+    title: 'CatFlix Angular: Development and Workflow',
     repoLink: 'https://github.com/sophiefau/CatFlix-angular',
-    description: 'Welcome to the Angular version of CatFlix Movie app, a responsive web application built using Angular. This app allows users to browse movies, register an account, log in, and manage their profile. This app was rebuild by taking into account and create user flows, user stories and organisational workflow? Using the story points system to better organise the workload',
+    description: 'Welcome to the Angular version of the CatFlix Movie app—a responsive, single-page web application built with Angular. This project provided an opportunity to dive deeper into responsive design and refine the user experience through Angular’s powerful framework.',
+    details: 'The app was rebuilt with a focus on user flows, user stories, and organizational workflows, utilizing a story points system to streamline workload management. It includes comprehensive documentation to help other developers understand the codebase and contribute effectively.',
     features: [
       'Real-time messaging',
       'Background customization', 
@@ -108,9 +113,9 @@ export const projects = [
       'UI Components: Angular Material',
       'CSS Styling → SCSS',
       'Backend API → Movie API',
-      'Deployment → GitHub Pages',
+      'Typedoc → documentation',
       'Trello → Project management',
-      'Google Drawings → User flows'
+      'Google Drawings → User flows',
     ],
     images: ['img/kaban.png', 'img/user_story.png', 'img/user_story2.png']
   }

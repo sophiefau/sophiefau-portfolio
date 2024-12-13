@@ -9,6 +9,7 @@ window.openModal = function(index) {
   // Modal content
   document.getElementById('modal-title').textContent = project.title;
   document.getElementById('modal-text').textContent = project.description;
+  document.getElementById('modal-details').textContent = project.details;
 
    // Links
    const liveLinkDiv = document.querySelector('.div-link-1');
