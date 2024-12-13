@@ -65,12 +65,12 @@ export const projects = [
     ],
     tech: [
       'React → for building the user interface',
+      'Recharts → for data visualization',
       'Serverless and AWS → for scalable backend services',
       'Google Calendar API → for fetching event data',
-      'Jest and Puppeteer → for testing and end-to-end coverage',
-      'Recharts → for data visualization'
+      'Jest and Puppeteer → for testing and end-to-end coverage' 
     ],
-    images: ['img/meet_full.png', 'img/meet_mobile.png', 'img/meet_test.png', 'img/meet_test_coverage.png']
+    images: ['img/meet_full_web.png', 'img/meet_mobile.png', 'img/meet_test.png', 'img/meet_test_coverage.png']
   },
   {
     title: 'ChatMe',
