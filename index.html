@@ -7,16 +7,9 @@
 
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
-    rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
-    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 
   <title>Sophie Fauquembergue - Portfolio</title>
@@ -54,9 +47,6 @@
         <div class="grid_item" onclick="openModal(3)">
           <img src="img/chatme.png" alt="image showing ChatMe project">
         </div>
-        <div class="grid_item" onclick="openModal(4)">
-          <img src="img/angular.png" alt="image showing Project organisation workflow">
-        </div>
       </div>
 
       <div id="myModal" class="modal">
@@ -65,28 +55,58 @@
             <h3 id="modal-title" class="sr-only">Modal title</h3>
           </div>
           <div class="modal-links">
-            <div class="div-link-1"><a id="modal-link-1" class="button" target="_blank">Live app</a></div>
-            <div class="div-link-2"><a id="modal-link-2" class="button" target="_blank">Link to repository</a></div>
-            <div class="div-link-3"><a id="modal-link-3" class="button" target="_blank">Link to database</a></div>
+            <div class="div-link-1"><a id="modal-link-1" class="button" target="_blank">Live App</a></div>
+            <div class="div-link-2"><a id="modal-link-2" class="button" target="_blank">Repository</a></div>
+            <div class="div-link-3"><a id="modal-link-3" class="button" target="_blank">Custom Link</a></div>
           </div>
-            <p id="modal-text"></p>
-            <p id="modal-details"></p>
-            <h4>Key Features</h4>
-            <ul id="modal-features"></ul>
-            <h4>Tech Specs</h4>
-            <ul id="modal-tech"></ul>
-          <div id="modal-images">
-            <img id="modal-img-1" class="modal-img" alt="Project image">
-            <img id="modal-img-2" class="modal-img" alt="Project image">
+          <div class="modal-text-block">
+            <p id="modal-overview"></p>
           </div>
+          
+          <div class="modal-text-block">
+            <h4>Challenge</h4>
+          <p id="modal-details"></p>
+        </div>
+          
+          <!-- Section 1 -->
+          <div id="section-1" class="modal-block">
+            <div id="modal-img-1" class="modal-block-image"></div>
+            <p id="block-text-1" class="modal-block-text"></p>
+          </div>
+
+          <div class="modal-text-block">
+            <h4>Process</h4>
+            <p id="modal-features-text"></p>
+          <ul id="modal-features-list"></ul>
+        </div>
+      
+          <!-- Section 2 -->
+          <div id="section-2" class="modal-block">
+            <div id="modal-img-2" class="modal-block-image"></div>
+            <p id="block-text-2" class="modal-block-text"></p>
+          </div>
+      
+          <!-- Section 3 -->
+          <div id="section-3" class="modal-block">
+            <div id="modal-img-3" class="modal-block-image"></div>
+            <p id="block-text-3" class="modal-block-text"></p>
+          </div>
+      
+          <div class="modal-text-block">
+          <h4>Specs & Context</h4>
+          <p id="modal-specs-text"></p>
+          <ul id="modal-specs-list"></ul>
+        </div>
+          
+      
+          <!-- Modal Navigation -->
           <div class="modal-navigation">
             <p class="underline-inverse" onclick="previousProject()">Previous Project</p>
             <p class="underline" onclick="nextProject()">Next Project</p>
           </div>
           <span id="modal-close-btn" class="close" onclick="closeModal()">&times;</span>
         </div>
-        </div>
-     
+      </div>      
     </section>
 
     <section id="about">
@@ -97,8 +117,8 @@
       </div>
       <div class="profile_text">
 
-        <p> Hello here! <br> My name is Sophie.<br> I am a<span class="span-about">junior web developer and
-            designer.</span></p> <br>
+        <p> <span class="span-about">Hello here! </span> My name is Sophie.<br> I am a junior web developer and
+          designer.</p> <br>
         <a href="https://github.com/sophiefau" target="_blank" class="button">Check out some code</a>
         <div>
           <a href="files/cv.pdf" class="button" download>Download my CV </a>
@@ -109,19 +129,19 @@
         <h2>My expertise</h2>
         <div class="about-text">
           <p>
-            I’m originally from France and hold a Bachelor’s degree in Graphic Design from Université Laval in Canada.
-            During my studies, I developed skills in graphic design, web design, and UI/UX design.
-          </p>
-          <p>
-            After working for two years as a graphic designer in an agency and as a freelancer, I moved to Germany,
-            where I started to work in customer service. Among these roles, I worked for Facebook's advertising
-            services,
-            gaining experience in e-commerce and online marketing.
-          </p>
-          <p>
-            Recently, I completed a Full-Stack Web Development program at CareerFoundry and am I am looking forward to
-            pursuing a
-            career combining my design expertise and technical skills in web and app development.
+            I am a Junior Web Developer and Designer with a background in graphic design and customer service, combining
+            creative expertise with strong problem-solving and teamwork skills to deliver visually engaging and
+            functional websites and web apps. </p>
+
+          <p>Originally from France, I hold a Bachelor’s degree in Graphic Design from Université Laval in Canada, where
+            I developed skills in graphic design, web design, and UI/UX design. After working for two years as a graphic
+            designer in an agency and as a freelancer, I moved to Germany and gained valuable experience in customer
+            service. Among these roles, I worked for Facebook's advertising services, building expertise in e-commerce
+            and online marketing.</p>
+
+          <p>Recently, I completed an intensive 6-month Full-Stack Web Development program at CareerFoundry, where I
+            honed my technical skills to complement my design background. This unique combination enables me to create
+            websites and applications that are not only functional but also aesthetically compelling and user-focused.
           </p>
         </div>
         <h2>Technical skills</h2>
@@ -230,6 +250,7 @@
         </div>
       </div>
     </section>
+
     <section id="contact">
       <h1>Contact</h1>
       <div>
@@ -255,10 +276,7 @@
         <br>
         <input class="button" type="submit" value="Send me your message!">
       </form>
-
-
     </section>
-
 
   </main>
   <footer>
@@ -267,10 +285,8 @@
       <a href="https://github.com/sophiefau" target="_blank"><img src="img/github_icon.svg" alt="Github"></a>
       <a href="https://www.linkedin.com/in/sophie-fauquembergue-652347341/" target="_blank"><img
           src="img/linkedin_icon.svg" alt="LinkedIn"></a>
-      <a href="https://github.com/sophiefau" target="_blank"><img src="img/twitter_icon.svg" alt="Twitter"></a>
-      <a href="https://medium.com/@sophiefauquembergue" target="_blank"><img src="img/medium_icon.svg" alt="Medium"></a>
     </div>
-    <p>Copyright © 2024 Sophie Fauquembergue</p>
+    <p>Copyright © 2025 Sophie Fauquembergue</p>
     <a href="#" class="back-to-top" title="Back to top"> Back to top ↑</a>
   </footer>
   <script type="module" src="js/projectsData.js"></script>

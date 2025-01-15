@@ -4,17 +4,26 @@ export const projects = [
     title: 'Pokédex',
     liveLink: 'https://sophiefau.github.io/pokedex/',
     repoLink: 'https://github.com/sophiefau/pokedex',
-    description: 'This project is a simple web application displaying a list of Pokémon, fetched from the PokéAPI. Step into the enchanting world of Pokémon! Search and click on any Pokémon to uncover its unique details and abilities.',
-    details: 'The application is built using HTML, CSS, and JavaScript, and it loads data from an external API. It is fully responsive, prioritizing a seamless user experience.',
+    description: 'Simple web application displaying a list of Pokémon, fetched from the PokéAPI.',
+    details: 'This project uses the open-source PokéAPI and loads data from it. The goal was to build a fully responsive web app, utilizing HTML, CSS, and JavaScript.',
+    process: 'The Pokédex retrieves selected data from the PokéAPI. The following features were implemented:',
     features: [
-      'Fetches a list of 300 Pokémon from the PokéAPI',
-      'Displays a list of Pokémons with their image and type',
-      'Look for a specific Pokémon using the search field',
-      'Organize Pokémon by type',
-      'Check the details for each Pokémon'
+      'Fetches a list of 300 Pokémon, displaying their image and type',
+      'Can filter by name using the search field, or by type using the navigation',
+      'Upon clicking on a Pokémon, a modal opens with more details and fun facts.'
     ],
-    tech: ['HTML', 'CSS', 'JavaScript', 'Fetch API', 'EsLint'],
-    images: ['img/pokedex-full.png', 'img/pokedex-modal.png', 'img/pokedex_mobile.png']
+    specs: 'This project was completed as part of the Full-Stack Development Course at CareerFoundry. The following technologies were used:',
+    tech: ['HTML, CSS, JavaScript', 'Fetch API', 'EsLint and https://validator.w3.org/→ to validate the code'],
+    blockTexts: [
+      'Web view of the Pokédex. Explore a complete list of 300 Pokémon fetched from the PokéAPI.',
+      'Dive into the details of each Pokémon and fun facts about them.',
+      'Enjoy a fully responsive design, optimized for all devices. It is possible to filter by name or type.'
+    ],
+    blockImages: [
+      'img/pokedex-full.png',
+      'img/pokedex-modal.png',
+      'img/pokedex_mobile.png'
+    ]
   },
   {
     title: 'CatFlix',
@@ -47,7 +56,16 @@ export const projects = [
       'Krita → For creating the final logo and editing the images',
       'Swagger → For documenting the API'
     ],
-    images: ['img/catflix-full.png', 'img/catflix-movie-details.png', 'img/catflix_mobile1.png', 'img/catflix_mobile2.png']
+    blockTexts: [
+      '',
+      '.',
+      '.'
+    ],
+    blockImages: [
+      'img/catflix-full.png',
+      'img/catflix-movie-details.png',
+      'img/catflix_mobile1.png'
+    ]
   },
   {
     title: 'Meet!',
@@ -70,7 +88,17 @@ export const projects = [
       'Google Calendar API → for fetching event data',
       'Jest and Puppeteer → for testing and end-to-end coverage' 
     ],
-    images: ['img/meet_full_web.png', 'img/meet_mobile.png', 'img/meet_test.png', 'img/meet_test_coverage.png']
+    blockTexts: [
+      '.',
+      '.',
+      '.'
+    ],
+    blockImages: [
+      'img/meet_full_web.png',
+      'img/meet_mobile.png',
+      'img/meet_test.png',
+      'img/meet_test_coverage.png'
+    ]
   },
   {
     title: 'ChatMe',
@@ -94,29 +122,11 @@ export const projects = [
       'React Native Maps → Display shared location',
       'ImagePicker → Upload and share images',
     ],
-    images: ['img/chatme_mobile.png']
+    blockTexts: [
+      'Explore a complete list of 300 Pokémon fetched from the PokéAPI.',
+    ],
+    blockImages: [
+      'img/chatme_mobile.png'
+    ]
   },
-  {
-    title: 'CatFlix Angular: Development and Workflow',
-    repoLink: 'https://github.com/sophiefau/CatFlix-angular',
-    description: 'Welcome to the Angular version of the CatFlix Movie app—a responsive, single-page web application built with Angular. This project provided an opportunity to dive deeper into responsive design and refine the user experience through Angular’s powerful framework.',
-    details: 'The app was rebuilt with a focus on user flows, user stories, and organizational workflows, utilizing a story points system to streamline workload management. It includes comprehensive documentation to help other developers understand the codebase and contribute effectively.',
-    features: [
-      'Real-time messaging',
-      'Background customization', 
-      'Send a picture, from the galery or taken with the phone camera', 
-      'Location Sharing', 
-      'Offline access to cached messages'
-    ],
-    tech: [
-      'Frontend Framework → Angular',
-      'UI Components: Angular Material',
-      'CSS Styling → SCSS',
-      'Backend API → Movie API',
-      'Typedoc → documentation',
-      'Trello → Project management',
-      'Google Drawings → User flows',
-    ],
-    images: ['img/kaban.png', 'img/user_story.png', 'img/user_story2.png']
-  }
 ];

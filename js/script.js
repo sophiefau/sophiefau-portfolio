@@ -8,12 +8,13 @@ window.openModal = function (index) {
 
   // Modal content
   document.getElementById("modal-title").textContent = project.title;
-  document.getElementById("modal-text").textContent = project.description;
+  document.getElementById("modal-overview").textContent = project.description;
   document.getElementById("modal-details").textContent = project.details;
+  document.getElementById("modal-features-text").textContent = project.process;
+  document.getElementById("modal-specs-text").textContent = project.specs;
 
   // Accessibility h3
   const modalTitle = document.getElementById("modal-title");
-  modalTitle.textContent = "My Modal Title";
   modalTitle.classList.remove("sr-only");
 
   // Links
@@ -46,7 +47,7 @@ window.openModal = function (index) {
   }
 
   // Features list
-  const featuresList = document.getElementById("modal-features");
+  const featuresList = document.getElementById("modal-features-list");
   featuresList.innerHTML = "";
   project.features.forEach((feature) => {
     const li = document.createElement("li");
@@ -55,7 +56,7 @@ window.openModal = function (index) {
   });
 
   // Tech list
-  const techList = document.getElementById("modal-tech");
+  const techList = document.getElementById("modal-specs-list");
   techList.innerHTML = "";
   project.tech.forEach((tech) => {
     const li = document.createElement("li");
@@ -63,15 +64,31 @@ window.openModal = function (index) {
     techList.appendChild(li);
   });
 
-  // Images
-  const modalImagesContainer = document.getElementById("modal-images");
-  modalImagesContainer.innerHTML = "";
-  project.images.forEach((imageSrc, index) => {
-    const imgElement = document.createElement("img");
-    imgElement.src = imageSrc;
-    imgElement.alt = `Project image ${index + 1}`;
-    imgElement.classList.add("modal-img");
-    modalImagesContainer.appendChild(imgElement);
+  // Block Texts and Images
+  const blockTexts = project.blockTexts || [];
+  const blockImages = project.blockImages || [];
+
+  // Hide sections if no data exists
+  const sectionIds = [1, 2, 3];
+  sectionIds.forEach((index) => {
+    const section = document.getElementById(`section-${index}`);
+    const textElement = document.getElementById(`block-text-${index}`);
+    const imgContainer = document.getElementById(`modal-img-${index}`);
+    
+    if (blockTexts[index - 1] && blockImages[index - 1]) {
+      section.style.display = "block";
+      textElement.textContent = blockTexts[index - 1];
+      
+      // Clear existing content before adding new image
+      imgContainer.innerHTML = ""; 
+      const imgElement = document.createElement("img");
+      imgElement.src = blockImages[index - 1];
+      imgElement.alt = `Project image ${index}`;
+      imgElement.classList.add("modal-img");
+      imgContainer.appendChild(imgElement);
+    } else {
+      section.style.display = "none"; // Hide section if no content
+    }
   });
 
   // Display modal
