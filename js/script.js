@@ -6,13 +6,6 @@ window.openModal = function (index) {
   currentProjectIndex = index; // Set the current project index
   const project = projects[currentProjectIndex];
 
-  // Modal content
-  document.getElementById("modal-title").textContent = project.title;
-  document.getElementById("modal-overview").textContent = project.description;
-  document.getElementById("modal-details").textContent = project.details;
-  document.getElementById("modal-features-text").textContent = project.process;
-  document.getElementById("modal-specs-text").textContent = project.specs;
-
   // Accessibility h3
   const modalTitle = document.getElementById("modal-title");
   modalTitle.classList.remove("sr-only");
@@ -46,8 +39,15 @@ window.openModal = function (index) {
     customLinkDiv.style.display = "none";
   }
 
+  // Modal content
+  document.getElementById("modal-title").textContent = project.title;
+  document.getElementById("modal-overview").textContent = project.overview;
+  document.getElementById('modal-text').textContent = project.text;
+  document.getElementById("mobile1").src = project.mobile1;
+  document.getElementById("mobile2").src = project.mobile2;
+
   // Features list
-  const featuresList = document.getElementById("modal-features-list");
+  const featuresList = document.getElementById("modal-features");
   featuresList.innerHTML = "";
   project.features.forEach((feature) => {
     const li = document.createElement("li");
@@ -56,7 +56,7 @@ window.openModal = function (index) {
   });
 
   // Tech list
-  const techList = document.getElementById("modal-specs-list");
+  const techList = document.getElementById("modal-tech");
   techList.innerHTML = "";
   project.tech.forEach((tech) => {
     const li = document.createElement("li");
@@ -64,31 +64,16 @@ window.openModal = function (index) {
     techList.appendChild(li);
   });
 
-  // Block Texts and Images
-  const blockTexts = project.blockTexts || [];
-  const blockImages = project.blockImages || [];
+  // Images
+  const additionalImagesContainer = document.getElementById("modal-images-container");
+  additionalImagesContainer.innerHTML = ''; // Clear previous images
 
-  // Hide sections if no data exists
-  const sectionIds = [1, 2, 3];
-  sectionIds.forEach((index) => {
-    const section = document.getElementById(`section-${index}`);
-    const textElement = document.getElementById(`block-text-${index}`);
-    const imgContainer = document.getElementById(`modal-img-${index}`);
-    
-    if (blockTexts[index - 1] && blockImages[index - 1]) {
-      section.style.display = "block";
-      textElement.textContent = blockTexts[index - 1];
-      
-      // Clear existing content before adding new image
-      imgContainer.innerHTML = ""; 
-      const imgElement = document.createElement("img");
-      imgElement.src = blockImages[index - 1];
-      imgElement.alt = `Project image ${index}`;
-      imgElement.classList.add("modal-img");
-      imgContainer.appendChild(imgElement);
-    } else {
-      section.style.display = "none"; // Hide section if no content
-    }
+  project.images.forEach(imageSrc => {
+    const img = document.createElement('img');
+  img.src = imageSrc;
+  img.alt = 'Additional project images';
+  img.classList.add('modal-image');
+  additionalImagesContainer.appendChild(img);
   });
 
   // Display modal
@@ -104,6 +89,7 @@ window.openModal = function (index) {
 // Close modal
 window.closeModal = function () {
   document.getElementById("myModal").style.display = "none";
+  window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to the top smoothly upon closing
 };
 
 window.onclick = function (event) {

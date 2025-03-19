@@ -7,287 +7,260 @@
 
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 
   <title>Sophie Fauquembergue - Portfolio</title>
   <link rel="shortcut icon" href="./img/favicon-32x32.png">
+
 </head>
 
 <body>
   <header>
-    <nav class="main-navigation page-header_item brackets">
+    <nav class="main-navigation">
       <ul role="menubar" class="navigation-list">
         <li role="presentation"><a href="#projects" role="menuitem" class="underline">Projects</a></li>
         <li role="presentation"><a href="#about" role="menuitem" class="underline">About</a></li>
-        <li role="presentation"> <a href="#contact" role="menuitem" class="underline">Contact</a></li>
+        <li role="presentation"><a href="#contact" role="menuitem" class="underline">Contact</a></li>
       </ul>
     </nav>
   </header>
+
   <main>
-    <div id="logo-name">
-      <p class="name">Sophie Fauquembergue</p>
-      <p class="role">Web designer&developer</p>
-    </div>
+    <section id="welcome">
+      <div class="grid-welcome">
+        <div class="logo">
+          <img src="img/logo-black.png" class="rotate" alt="logo for Sophie Fauquembergue portoflio website">
+        </div>
+        <div class="welcome-text">
+          <p class="typing-text hello">
+            Bonjour, hi, hallo,
+          </p>
+          <p class="hello">I'm Sophie!</p>
+          <br>
+          <p>
+            A junior web developer with a background <br> in graphic design and UX/UI
+            design,<br>based in Berlin.
+            <br>
+            <br>
+            Find more <a href="#about" role="menuitem" class="underline">about me</a>.
+          </p>
+          <div class="social-media">
+            <a href="https://www.linkedin.com/in/sophie-fauquembergue-652347341/" target="_blank"><img
+                src="img/linkedin_icon.svg" alt="LinkedIn Icon">
+            </a>
+            <a href="https://github.com/sophiefau" target="_blank"><img src="img/github_icon.svg" alt="Github Icon">
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
 
     <section id="projects">
       <h1>Projects</h1>
+
       <div class="grid">
         <div class="grid_item" onclick="openModal(0)">
-          <img src="img/pokedex.png" alt="image showing Pokédex project">
-        </div>
-        <div class="grid_item" onclick="openModal(1)">
+          <div class="project-info">
+            <p class="project-text">/ React - Mongo DB <br>- Express - Node JS</p>
+          </div>
           <img src="img/catflix.png" alt="image showing CatFlix project">
         </div>
-        <div class="grid_item" onclick="openModal(2)">
+
+        <div class="grid_item" onclick="openModal(1)">
+          <div class="project-info">
+            <p class="project-text">/ React - Severless</p>
+          </div>
           <img src="img/meet.png" alt="image showing Meet project">
         </div>
-        <div class="grid_item" onclick="openModal(3)">
+
+        <div class="grid_item" onclick="openModal(2)">
+          <div class="project-info">
+            <p class="project-text">/ Native React <br>Chat App</p>
+          </div>
           <img src="img/chatme.png" alt="image showing ChatMe project">
+        </div>
+
+        <div class="grid_item" onclick="openModal(3)">
+          <div class="project-info">
+            <p class="project-text">/ SPA <br> JS - API</p>
+          </div>
+          <img src="img/pokedex.png" alt="image showing Pokédex project">
         </div>
       </div>
 
       <div id="myModal" class="modal">
-        <div class="modal-content" tabindex="-1">
-          <div class="div-h3">
-            <h3 id="modal-title" class="sr-only">Modal title</h3>
+        <div class="modal-content">
+          <div class="div-h2">
+            <h1 id="modal-title"></h1>
           </div>
           <div class="modal-links">
-            <div class="div-link-1"><a id="modal-link-1" class="button" target="_blank">Live App</a></div>
+            <div class="div-link-1"><a id="modal-link-1" class="button" target="_blank">Live app</a></div>
             <div class="div-link-2"><a id="modal-link-2" class="button" target="_blank">Repository</a></div>
-            <div class="div-link-3"><a id="modal-link-3" class="button" target="_blank">Custom Link</a></div>
-          </div>
-          <div class="modal-text-block">
-            <p id="modal-overview"></p>
-          </div>
-          
-          <div class="modal-text-block">
-            <h4>Challenge</h4>
-          <p id="modal-details"></p>
-        </div>
-          
-          <!-- Section 1 -->
-          <div id="section-1" class="modal-block">
-            <div id="modal-img-1" class="modal-block-image"></div>
-            <p id="block-text-1" class="modal-block-text"></p>
+            <div class="div-link-3"><a id="modal-link-3" class="button" target="_blank">Database</a></div>
           </div>
 
-          <div class="modal-text-block">
-            <h4>Process</h4>
-            <p id="modal-features-text"></p>
-          <ul id="modal-features-list"></ul>
-        </div>
-      
-          <!-- Section 2 -->
-          <div id="section-2" class="modal-block">
-            <div id="modal-img-2" class="modal-block-image"></div>
-            <p id="block-text-2" class="modal-block-text"></p>
+          <div class="grid-container">
+            <div class="text-container-2third aligned-left">
+              <p id="modal-overview"></p>
+              <p id="modal-text"></p>
+            </div>
+            <div>
+              <img id="mobile1" class="mobile" alt="Project image">
+            </div>
           </div>
-      
-          <!-- Section 3 -->
-          <div id="section-3" class="modal-block">
-            <div id="modal-img-3" class="modal-block-image"></div>
-            <p id="block-text-3" class="modal-block-text"></p>
+
+          <div class="grid-container">
+            <div>
+              <img id="mobile2" class="mobile" alt="Project image">
+            </div>
+            <div class="text-container-2third">
+              <h2>/ Key Features</h2>
+              <ul id="modal-features"></ul>
+            </div>
           </div>
-      
-          <div class="modal-text-block">
-          <h4>Specs & Context</h4>
-          <p id="modal-specs-text"></p>
-          <ul id="modal-specs-list"></ul>
-        </div>
-          
-      
-          <!-- Modal Navigation -->
+
+          <div>
+            <h2>/ Tech Specs</h2>
+            <ul id="modal-tech"></ul>
+          </div>
+
+          <div id="modal-images-container">
+          </div>
+
           <div class="modal-navigation">
             <p class="underline-inverse" onclick="previousProject()">Previous Project</p>
-            <p class="underline" onclick="nextProject()">Next Project</p>
+            <p id="modal-close-btn" class="close" onclick="closeModal()">&times;</p>
+            <p class="underline-modal" onclick="nextProject()">Next Project</p>
           </div>
-          <span id="modal-close-btn" class="close" onclick="closeModal()">&times;</span>
+
         </div>
-      </div>      
+      </div>
+
     </section>
 
     <section id="about">
-      <h1>About me</h1>
-      <div class="profile_portrait">
-        <img src="img/workingspaceretro_inverse.png" class="img_profile" alt="an image showing a workspace">
-        <img src="img/workingspaceretro.png" class="img_profile_hover" alt="a revert image showing a workspace">
-      </div>
-      <div class="profile_text">
-
-        <p> <span class="span-about">Hello here! </span> My name is Sophie.<br> I am a junior web developer and
-          designer.</p> <br>
-        <a href="https://github.com/sophiefau" target="_blank" class="button">Check out some code</a>
-        <div>
-          <a href="files/cv.pdf" class="button" download>Download my CV </a>
+      <h1>About</h1>
+      <div class="grid-container">
+        <div class="image-round">
+          <img src="img/portrait.png" class="image-round portrait" alt="portrait of Sophie Fauquembergue">
+        </div>
+        <div class="text-container-2third justify">
+          <p>
+            Originally from France, I hold a Bachelor’s degree in Graphic Design from Université Laval in Canada, where
+            I developed skills in graphic design, web design, and UI/UX design. After working for two years as a graphic
+            designer in an agency and as a freelancer, I moved to Berlin in Germany and gained experience in customer
+            service.
+            Among these roles, I worked for Facebook's advertising services, building expertise in e-commerce and online
+            marketing. </p>
         </div>
       </div>
 
-      <div class="about-moreinfo">
-        <h2>My expertise</h2>
-        <div class="about-text">
-          <p>
-            I am a Junior Web Developer and Designer with a background in graphic design and customer service, combining
-            creative expertise with strong problem-solving and teamwork skills to deliver visually engaging and
-            functional websites and web apps. </p>
-
-          <p>Originally from France, I hold a Bachelor’s degree in Graphic Design from Université Laval in Canada, where
-            I developed skills in graphic design, web design, and UI/UX design. After working for two years as a graphic
-            designer in an agency and as a freelancer, I moved to Germany and gained valuable experience in customer
-            service. Among these roles, I worked for Facebook's advertising services, building expertise in e-commerce
-            and online marketing.</p>
-
+      <div class="grid-container">
+        <div class="text-container-2third justify">
           <p>Recently, I completed an intensive 6-month Full-Stack Web Development program at CareerFoundry, where I
-            honed my technical skills to complement my design background. This unique combination enables me to create
-            websites and applications that are not only functional but also aesthetically compelling and user-focused.
+            honed
+            my technical skills to complement my design background. This specific combination enables me to create
+            websites and applications that are functional, visually engaging and user-focused.
           </p>
         </div>
-        <h2>Technical skills</h2>
-        <div class="table-container">
-          <table>
-            <tr>
-              <th>Fullstack development</th>
-            </tr>
-            <tr>
-              <td>Languages</td>
-              <td>Beginner</td>
-              <td>Intermediate</td>
-              <td>Advanced</td>
-            </tr>
-            <tr>
-              <td>HTML5</td>
-              <td></td>
-              <td></td>
-              <td>x</td>
-            </tr>
-            <tr>
-              <td>CSS / SCSS</td>
-              <td></td>
-              <td></td>
-              <td>x</td>
-            </tr>
-            <tr>
-              <td>JavaScript</td>
-              <td></td>
-              <td>x</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>React / React Native</td>
-              <td>x</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Node.js / Express.js</td>
-              <td>x</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>MongoDB / SQL</td>
-              <td>x</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Typescript / Angular</td>
-              <td>x</td>
-              <td></td>
-              <td></td>
-            </tr>
-          </table>
-
-          <table>
-            <tr>
-              <th>Graphic design</th>
-            </tr>
-            <tr>
-              <td>Softwares</td>
-              <td>Beginner</td>
-              <td>Intermediate</td>
-              <td>Advanced</td>
-            </tr>
-            <tr>
-              <td>Adobe Photoshop</td>
-              <td></td>
-              <td></td>
-              <td>x</td>
-            </tr>
-            <tr>
-              <td>Adobe Illustrator</td>
-              <td></td>
-              <td></td>
-              <td>x</td>
-            </tr>
-            <tr>
-              <td>Adobe InDesign</td>
-              <td></td>
-              <td></td>
-              <td>x</td>
-            </tr>
-            <tr>
-              <td>Adobe Dreamweaver</td>
-              <td></td>
-              <td>x</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Bootstrap</td>
-              <td></td>
-              <td>x</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Krita</td>
-              <td>x</td>
-              <td></td>
-              <td></td>
-            </tr>
-          </table>
+        <div class="image-round">
+          <img src="img/workingspaceretro.png" class="image-round workshop"
+            alt="an illustration showing a workspace in blue-green colors">
         </div>
       </div>
+
+      <h2>/ Technical skills</h2>
+      <div class="skills-container">
+
+        <div class="skills-list">
+          <div class="picto-container-left">
+            <img src="img/picto-tools.png" alt="pictogram of tools" class="picto picto-anime" />
+            <img src="img/picto-tools-anime.png" alt="pictogram of tools in function" class="picto picto-hover" />
+          </div>
+          <h3>Programming Languages <br>&amp; Frameworks:</h3>
+          <ul>
+            <li>HTML5 / CSS, SCSS / JavaScript</li>
+            <li>React / React Native</li>
+            <li>Node.js / Express.js</li>
+            <li>SQL / MongoDB</li>
+            <li>Typescript / Angular</li>
+            <li>Bootstrap</li>
+          </ul>
+        </div>
+
+        <div class="skills-list">
+          <div class="picto-container-left">
+            <img src="img/picto-oeil.png" alt="pictogram of a close eye" class="picto picto-anime" />
+            <img src="img/picto-oeil-open.png" alt="pictogram of an open eye" class="picto picto-hover" />
+          </div>
+          <h3>Testing &amp; Design Tools:</h3>
+          <ul>
+            <br>
+            <li>Postmann</li>
+            <li>Android Studio</li>
+            <li>Adobe Photoshop / Illustrator
+              <br>/ InDesign / Dreamweaver
+            </li>
+            <li>Krita</li>
+          </ul>
+        </div>
+
+      </div>
+
     </section>
 
     <section id="contact">
       <h1>Contact</h1>
-      <div>
-        <p> Feel free to contact me! <br> at <a
-            href="mailto:sophiefauquembergue@gmail.com">sophiefauquembergue@gmail.com</a><br> or use the following form:
-        </p>
+
+      <div class="picto-container">
+        <img src="img/picto-email.png" class="picto picto-anime" alt="pictogram of a closed letter">
+        <img src="img/picto-email-open.png" class="picto picto-hover" alt="pictogram of an open letter">
       </div>
+      <p> Feel free to <a href="mailto:sophiefauquembergue@gmail.com" class="underline">contact me!</a><br> or use the
+        following form:
+      </p>
 
-      <form action="https://formspree.io/f/mjkvdzel" method="POST" id="contact-form">
-        <label for="contact-name" class="standard-label">Tell me your name: </label>
-        <br>
-        <input type="text" id="contact-name" name="name" required>
-        <br>
+      <div class="contact-form">
+        <form action="https://formspree.io/f/mjkvdzel" method="POST" id="contact-form">
 
-        <label for="contact-email" class="standard-label">Leave your email: </label>
-        <br>
-        <input type="email" id="contact-email" name="email" required>
-        <br>
+          <div class="contact-top">
+            <div class="contact-name">
+              <label for="contact-name" class="standard-label"></label>
+              <input type="text" id="contact-name" name="name" required placeholder="Tell me your name">
+            </div>
+            <div class="contact-email">
+              <label for="contact-email" class="standard-label"></label>
+              <input type="email" id="contact-email" name="email" required placeholder="Leave your email">
+            </div>
+          </div>
 
-        <label for="contact-message" class="standard-label">Write something: </label>
-        <br>
-        <textarea required maxlength="240" id="contact-message" name="message"></textarea>
-        <br>
-        <input class="button" type="submit" value="Send me your message!">
-      </form>
+          <div class="contact-message">
+            <label for="contact-message" class="standard-label"></label>
+            <textarea required minlength="30" maxlength="300" id="contact-message" name="message"
+              placeholder="Write me something..."></textarea>
+          </div>
+          <input class="button" type="submit" value="Send your message!">
+        </form>
+      </div>
     </section>
 
   </main>
+
   <footer>
-    <p>Find me on</p>
-    <div class="social-media">
-      <a href="https://github.com/sophiefau" target="_blank"><img src="img/github_icon.svg" alt="Github"></a>
-      <a href="https://www.linkedin.com/in/sophie-fauquembergue-652347341/" target="_blank"><img
-          src="img/linkedin_icon.svg" alt="LinkedIn"></a>
-    </div>
+    <a href="#">
+      <img src="img/logo-colored.png" class="rotate-inverse image-round-188 logo-bas"
+        alt="logo reverse for Sophie Fauquembergue portoflio website">
+    </a>
+
+    <a href="#" class="back-to-top underline-inverse" title="Back to top">Back to top ↑</a>
     <p>Copyright © 2025 Sophie Fauquembergue</p>
-    <a href="#" class="back-to-top" title="Back to top"> Back to top ↑</a>
+    <div class="img-footer"><img src="img/motif-bas.png" alt="decorative image"></div>
   </footer>
   <script type="module" src="js/projectsData.js"></script>
   <script type="module" src="js/script.js"></script>
