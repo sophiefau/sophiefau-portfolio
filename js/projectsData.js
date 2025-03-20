@@ -86,8 +86,8 @@ export const projects = [
       "React Native Maps → Display shared location",
       "ImagePicker → Upload and share images",
     ],
-    mobile1: "img/chatMe_start.png",
-    mobile2: "img/chatMe_options.png",
+    mobile1: "img/chatme_start.png",
+    mobile2: "img/chatme_options.png",
     images: [],
   },
   {
