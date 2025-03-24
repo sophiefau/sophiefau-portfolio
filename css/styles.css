@@ -491,7 +491,8 @@ li::marker {
 
 .modal-navigation {
   cursor: pointer;
-  width: 333px;
+  width: 100%;
+  max-width: 333px;
   margin: auto;
   font-size: 18px;
   display: flex;
@@ -786,9 +787,12 @@ header {
   text-align: center;
 }
 .modal-links {
-  font-size: 13px;
+  font-size: 12px;
   gap: 17px;
   align-items: center;
+}
+.modal-links a{
+  font-size: 12px;
 }
 .modal-content ul {
   grid-template-columns: 1fr;
