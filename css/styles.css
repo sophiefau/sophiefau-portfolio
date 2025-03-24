@@ -463,6 +463,7 @@ li::marker {
 .modal-content ul {
   text-align: left;
   line-height: 1.3em;
+  list-style-type: circle;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -713,7 +714,7 @@ h1 {
   font-size: 25px;
 }
 h2 {
-  font-size: 27px;
+  font-size: 22px;
 }
 li{
   margin-left: 17px;
@@ -781,17 +782,17 @@ header {
 
 /* Modal */
 #modal-overview {
-  font-size: 25px;
+  font-size: 22px;
   text-align: center;
 }
 .modal-links {
-  font-size: 14px;
+  font-size: 13px;
   gap: 17px;
   align-items: center;
 }
 .modal-content ul {
   grid-template-columns: 1fr;
-  line-height: 1.2em;
+  line-height: 1.1em;
 }
 .modal-navigation p{
   font-size: 15px;
