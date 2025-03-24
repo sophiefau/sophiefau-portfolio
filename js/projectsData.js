@@ -78,7 +78,7 @@ export const projects = [
     ],
     tech: [
       "React Native → JavaScript framework",
-      "Expo → Development platform",
+      "Expo and Expo Go → Development platform",
       "Android Studio Emulator → Testing",
       "GiftedChat → React Native chat library",
       "Firebase → Database & file storage",
