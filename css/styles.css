@@ -787,12 +787,8 @@ header {
   text-align: center;
 }
 .modal-links {
-  font-size: 12px;
   gap: 17px;
   align-items: center;
-}
-.modal-links a{
-  font-size: 12px;
 }
 .modal-content ul {
   grid-template-columns: 1fr;
